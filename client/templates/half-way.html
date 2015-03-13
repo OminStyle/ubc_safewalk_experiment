@@ -1,0 +1,16 @@
+<template name="halfWay">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Half Way Done</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button-clear">{{> ionIcon icon="ion-navicon-round"}}</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <p>You are half way done! Please go through the request page again but this time you don't need have to enter your profile page since would have been saved.</p>
+      <button class="js-start button button button-block button-positive">Start</button>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

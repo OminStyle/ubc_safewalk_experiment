@@ -1,0 +1,23 @@
+<template name="start">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Welcome</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <div class="center">
+        <img class="center" src="/safewalk_logo.gif">
+        <h4>
+          We are students at UBC EECE 418 Human Computer
+          Interaction course and we are simulating requesting
+          Safewalk with mobile app instead of making a phone call.
+          None of the data used in the forms will be saved so please
+          go through the app as if you are really using it.
+        </h4>
+      </div>
+
+
+      <button class="js-start button button button-block button-positive">Start</button>
+    {{/ionContent}}
+  {{/ionView}}
+</template>

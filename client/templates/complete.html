@@ -1,0 +1,16 @@
+<template name="complete">
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Complete</h1>
+  {{/contentFor}}
+
+  {{#contentFor "headerButtonRight"}}
+    <button class="button-clear">{{> ionIcon icon="ion-navicon-round"}}</button>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      <p>Thank you for paticipating in our experiment!</p>
+      <p>Feedback... *****</p>
+    {{/ionContent}}
+  {{/ionView}}
+</template>
