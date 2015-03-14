@@ -9,9 +9,10 @@
 
   {{#ionView}}
     {{#ionContent}}
+      <!--{{> googleMap name="exampleMap" options=exampleMapOptions}}-->
       {{#autoForm collection="Requests" id="first-request-new-form" type="normal"}}
-        {{> afQuickField name='pickupLocation'}}
-        {{> afQuickField name='destination'}}
+        {{> afQuickField name='pickupLocation' id="autocomplete1"}}
+        {{> afQuickField name='destination' id="autocomplete2"}}
         {{> afQuickField name='time'}}
         {{> afQuickField name='notes'}}
         <button type="submit" class="button button-block button-positive">Send Request</button>
