@@ -6,7 +6,6 @@ AutoForm.hooks({
       Router.go('firstRequest');
     },
     onSubmit: function (doc) {
-      console.log("We are not saving any data!");
       this.done();
       return false;
     }
@@ -23,7 +22,6 @@ AutoForm.hooks({
       Router.go('halfWay');
     },
     onSubmit: function (doc) {
-      console.log("We are not saving any data!");
       this.done();
       return false;
     }
@@ -40,7 +38,6 @@ AutoForm.hooks({
       Router.go('complete');
     },
     onSubmit: function (doc) {
-      console.log("We are not saving any data!");
       this.done();
       return false;
     }
