@@ -38,3 +38,20 @@ Template.firstRequest.helpers({
     }
   }
 });
+
+Template.firstRequest.events({
+  'click [data-action="showPopup"]': function(event, template) {
+    console.log("clicked");
+    IonPopup.show({
+      title: 'Choose From Map',
+      template: 'Please choose a location from Google Map from the device that is given to you.',
+      buttons: [{
+        text: 'Close me',
+        type: 'button-positive',
+        onTap: function() {
+          IonPopup.close();
+        }
+      }]
+    });
+  }
+});

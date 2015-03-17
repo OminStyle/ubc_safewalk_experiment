@@ -12,7 +12,9 @@
       <!--{{> googleMap name="exampleMap" options=exampleMapOptions}}-->
       {{#autoForm collection="Requests" id="first-request-new-form" type="normal"}}
         {{> afQuickField name='pickupLocation' id="autocomplete1"}}
+        <button type="button" class="button button-success" data-action="showPopup">Choose from map</button>
         {{> afQuickField name='destination' id="autocomplete2"}}
+        <button type="button" class="button button-success" data-action="showPopup">Choose from map</button>
         {{> afQuickField name='time'}}
         {{> afQuickField name='notes'}}
         <button type="submit" class="button button-block button-positive">Send Request</button>

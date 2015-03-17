@@ -1,7 +1,7 @@
 Template.start.events({
   'click .js-start': function() {
-    StartTime = new Date().getTime();
-    console.log("Start time: " + StartTime);
+    FirstStartTime = new Date().getTime();
+    console.log("Start time: " + FirstStartTime);
     Router.go('signUp');
   }
 });
